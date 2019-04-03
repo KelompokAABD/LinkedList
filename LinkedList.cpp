@@ -1,6 +1,43 @@
+#include <iostream>
+using namespace std;
+
+struct node{
+    int data;
+    node *next;
+           };
+node *head, *tail;
+
+int isEmpty(){
+    if (head == NULL)
+        return 1;
+    else return 0;
+             }
+void InsFront(int nilai){
+    node *baru;
+    beru = new node;
+    baru->data=nilai;
+    baru->next=NULL;
+}else{
+    baru->next=head;
+    head=baru;
+}
+cout<<"\n data "<<nilai<<" dimasukan ke dalam list\n";
+}
+
+void InsBack(int nilai){
+    node *baru, *bantu;
+    baru=new node;
+    baru->data=nilai;
+    baru->next=NULL;
+}else{
+    bantu=head;
+    while(bantu->next!=NULL){
+        bantu=bantu->next;
+    
+
 int main (){
     cout<<"LINKED LIST\n\n";
-    cout<<"==================";
+    cout<<"==================\n";
     cout<<"1. Insert Depan\n";
     cout<<"2. Insert Belakang\n";
     cout<<"3. Hapus Depan\n";
