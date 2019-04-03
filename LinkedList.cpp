@@ -100,6 +100,24 @@ void DelBack(){
     delete after;
 }
 
+void delet(int databaru){
+node *bantu,*hapus;
+int a;
+if (isEmpty()==0){
+if(head!=tail){
+hapus = bantu;
+a = hapus->data;
+head = head->next;
+delete hapus;
+} else {
+a = tail->data;
+head=tail=NULL;
+}
+printf(" kehapus\n",a);
+} else printf("kosong\n");
+}
+
+
 void InsertPos(int letak, int nilai){
     node *before=new node;
     node *after=new node;
@@ -126,10 +144,11 @@ int main (){
     cout<<"3. Hapus Depan\n";
     cout<<"4. Hapus Belakang\n";
     cout<<"5. Insert Sesuai letak\n";
-    cout<<"6. Keluar Program\n\n";
+    cout<<"6. hapus node tertentu\n";
+    cout<<"7. Keluar Program\n\n";
     menu:
     int pil;
-    int nilai, letak;
+    int nilai, letak,b;
     cout<<"Masukkan Pilihan = ";cin>>pil;
     switch (pil){
         case 1 : cout<<"Masukkan data = ";
@@ -155,7 +174,11 @@ int main (){
                  InsertPos(letak,nilai);
                  Display();
                  goto menu;
-      case 6 : cout<<"\n\nTERIMA KASIH :) \n";
+        case 6 : cout<<"Masukkan angka yang ingin dihapus ";cin>>b;
+				     delet(b);
+                 Display();
+                 goto menu;
+      case 7 : cout<<"\n\nTERIMA KASIH :) \n";
                  exit(0);
             }
     return 0;
