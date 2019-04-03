@@ -1,3 +1,20 @@
+/* 1857051014 Muhammad Nur Ashiddiqi
+   1817051005 Arfina Shella Meilany
+   1817051021 Arafia Isnayu Akaf
+   1817051049 Bobby Malela
+*/
+/*
+Membuat Program Linked List :
+1.Menambah Node Depan
+2.Menambah Node Belakang
+3.Hapus Node Depan
+4.Hapus Node Belakang
+5.Menyisipkan Node di posisi tertentu
+   - Misal, insertNode(3,4) menambahkan Node dengan nilai data=3, sebelum Node yang meiliki nilai data 4.
+6.Hapus Node tertentu
+   - Misal hapusNode(3), artinya menghapus satu Node yang meiliki nilai data=3.
+   */
+
 #include <iostream>
 // #include <windows.h> ini buat pake windows
 using namespace std;
